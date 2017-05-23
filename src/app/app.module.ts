@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+//imports services
+import { YoutubeService } from './services/youtube.service';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -14,7 +17,9 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    YoutubeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
